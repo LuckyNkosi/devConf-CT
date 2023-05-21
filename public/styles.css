@@ -1,0 +1,136 @@
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+label,
+input {
+    margin: 0.5em;
+    font-size: x-large;
+}
+
+input[type=url] {
+    min-width: 50%;
+}
+
+button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    min-width: 90%;
+    max-width: 90%;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+th {
+    background-color: rgb(235, 235, 235);
+}
+
+td {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    font-size: small;
+}
+
+tr:nth-child(even) td {
+    background-color: rgb(250, 250, 250);
+}
+
+tr:nth-child(odd) td {
+    background-color: rgb(245, 245, 245);
+}
+
+caption {
+    padding: 10px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.warning {
+    color: orange;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+progress:indeterminate {
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+    display: block;
+    margin: 1em auto;
+    background: none;
+    width: 1em;
+    height: 1em;
+    border: 0;
+}
+progress:indeterminate::-moz-progress-bar {
+    background: none;
+}
+progress:indeterminate::-webkit-progress-bar {
+    display: none;
+}
+progress:indeterminate::-ms-fill {
+    animation-name: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(  0deg) }
+  100% { transform: rotate(360deg) }
+}
+
+progress:indeterminate {
+    border: 3em double;
+    border-color: gray darkgray;
+    border-radius: 50%;
+    animation: spin 1s infinite;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hidden{
+    visibility: hidden;
+}

@@ -1,0 +1,10 @@
+{
+    "default": {
+        "timeout": 50000
+    },
+    "urls": [
+        "http://localhost:3000/about.html",
+        "http://localhost:3000",
+        "https://cdpn.io/pen/debug/yLqOaEP"
+    ]
+}

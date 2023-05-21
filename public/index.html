@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+
+    <title>Testing A11y at DevConf</title>
+</head>
+
+<body>
+    <h1>A11y Tester</h1>
+    <section>
+        <form>
+            <label for="siteToTest">what site would you like to test now?</label>
+            <input id="site" name="siteToTest" type="url" required placeholder="enter a fully-qualified url to test." />
+            <button type="button" onclick="testSite()">Test Site</button>
+        </form>
+    </section>
+    <section>
+        <table>
+            <caption>Accessibility Issues Found</caption>
+            <thead>
+                <tr>
+                    <th>Violated Code</th>
+                    <th>Violation Type</th>
+                    <th>Message</th>
+                    <th>Context</th>
+                </tr>
+            </thead>
+            <tbody id="resultsTableBody">
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <label id="error" class="error hidden">error occurred.</label>
+        <label id="loader" class="hidden"> Analysing page...
+            <progress id="#loading"></progress>
+        </label>
+    </section>
+</body>
+
+</html>
