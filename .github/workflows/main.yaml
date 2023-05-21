@@ -1,0 +1,25 @@
+name: 'Test Code for a11y issues'
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# This allows a subsequently queued workflow run to interrupt previous runs
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pa11-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: browser-actions/setup-chrome@latest
+      - uses: Hesedi3l/pa11y-actions@v1
+        with:
+          start: test:ci
+          port: '3000'
