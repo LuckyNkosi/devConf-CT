@@ -14,4 +14,5 @@ app.get('/testSite', async (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server listening on http://localhost:${PORT}`);
+    console.log(`Test url on http://localhost:${PORT}/testSite?url=https://www.google.com`);
 });
