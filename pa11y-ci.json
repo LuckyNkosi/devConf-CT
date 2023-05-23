@@ -1,0 +1,8 @@
+{
+    "default": {
+        "timeout": 50000
+    },
+    "urls": [
+        "http://localhost:3000/about.html"
+    ]
+}
